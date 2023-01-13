@@ -1,5 +1,3 @@
-# Given the head of a singly linked list, reverse the list, and return the reversed list.
-
 def reverse_list(head, previous = nil) # parameters: head and previous 
     return previous if head.nil? 
 
@@ -48,9 +46,7 @@ reverse_list(2, 1)  returns 1
 reverse_list(head, previous) returns 5 -> 4 -> 3 -> 2 -> 1
 
 '''
-
-# Given the head of a singly linked list, return the middle node of the linked list.
-#If there are two middle nodes, return the second middle node.
+# _____________________________________________________________________________________________________________________________
 
 def middle_node(head, count = 0)  
     original = head
