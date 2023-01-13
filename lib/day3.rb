@@ -1,3 +1,5 @@
+# Given the head of a singly linked list, reverse the list, and return the reversed list.
+
 def reverse_list(head, previous = nil) # parameters: head and previous 
     return previous if head.nil? 
 
@@ -47,4 +49,37 @@ reverse_list(head, previous) returns 5 -> 4 -> 3 -> 2 -> 1
 
 '''
 
+# Given the head of a singly linked list, return the middle node of the linked list.
+#If there are two middle nodes, return the second middle node.
+
+def middle_node(head, count = 0)  
+    original = head
+
+    while head 
+        count += 1
+        head = head.next
+    end
+    
+    limit = count / 2
+
+    head = original
+
+    limit.times do
+        head = head.next
+    end
+    
+    head
+end
+
+# Input: [1, 2, 3, 4, 5]
+# Output: [3, 4, 5]
+
+# Input: [1, 2, 3, 4, 5, 6]
+# Output: [4, 5, 6]
+
+''' 
+First, we want to find out how many nodes are in a given linked list. Increase count by 1 when a node is reached. 
+Then, to find the middle node: go through the linked list by total number of nodes / 2  (i.e. count / 2)
+
+'''
 
