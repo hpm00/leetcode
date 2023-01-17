@@ -34,4 +34,15 @@ Problem 2: Given the head of a singly linked list, return the middle node of the
            If there are two middle nodes, return the second middle node.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Day 4: 
+Day 4: Best Time to Buy and Sell Stock, Longest Palindrome
+
+Problem 1: You are given an array prices where prices[i] is the price of a given stock on the ith day.
+           You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+           Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+Problem 2: Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with
+           those letters.
+           Letters are case sensitive, for example, "Aa" is not considered a palindrome here.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day 5: 
