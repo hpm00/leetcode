@@ -25,6 +25,8 @@ we do this first by getting each profit: selling price - buying price
 once we have all the profits, we get the maximum profit by using the #max method
 
 is buying price of 7 < selling price of 7 ? No
+    buying_price = 7
+is buying price of 7 < selling price of 1 ? yes 
     buying_price = 1
 is buying price of 1 < selling price of 5 ? yes 
     max_profit = [0, 4].max (4)
