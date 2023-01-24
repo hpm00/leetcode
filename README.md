@@ -45,4 +45,9 @@ Problem 2: Given a string s which consists of lowercase or uppercase letters, re
            Letters are case sensitive, for example, "Aa" is not considered a palindrome here.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Day 5: 
+Day 5: N-ary Tree Preorder Traversal, Binary Tree Level Order Traversal
+
+Problem 1: Given the root of an n-ary tree, return the preorder traversal of its nodes' values.
+           Nary-Tree input serialization is represented in their level order traversal. Each group of children is separated by the null value (See examples)
+
+Problem 2: Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
