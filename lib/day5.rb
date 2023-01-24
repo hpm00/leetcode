@@ -37,8 +37,70 @@ recursive method:
 
 # ---------------------------------------------------------------------------------
 def level_order(root)
-    
+    return [] if root.nil?  # part 1
+
+    bfs = []
+    q = [root] 
+
+    while !q.empty?   # part 4
+
+        level = [] 
+
+        q.size.times do    # part 2
+            node = q.shift 
+            level << node.val 
+            q << node.left if !node.left.nil?
+            q << node.right if !node.right.nil? 
+        end
+
+        bfs << level  # part 3
+    end
+        
+    bfs
 end
 
 ''' 
+Part 1 (above) deals with this situation ⬇
+Input: [] 
+Output: []
+
+for other cases ⬇
+
+Part 2 output: 
+1.times do ... end
+node = [3, 9, 20, null, null, 15, 7]
+level = [3]
+q = [[9], [20, 15, 17]]
+
+Part 3 Output:
+bfs = [[3]]
+
+part 4 output:
+level is back to empty array ( level = [] )
+but q is not empty, q = [[9], [20, 15, 17]] so, 
+do part 2 again -> this time it is 2.times do .... end 
+                   node = [9] 
+                   level = [9,20]
+                   q = [[15], [17]]
+
+do part 3 again -> bfs = [[3], [9,20]]
+
+even after this, the loop isn\'t finished -> q is not empty ( q = [[15], [17]] ) so, 
+do part 2 again -> again, 2.times do .... end 
+    node = [15] 
+    level = [15, 17]
+    q = []
+
+do part 3 again -> bfs = [[3], [9,20], [15,17]]
+
+finally, q is empty. part 4 is finished 
+now, return the bfs array
+
+
+Input: [3,9,20,null,null,15,7]
+Output: [[3],[9,20],[15,7]] 
+
+Input: [1, 2]
+Output: [[1], [2]]
+
 '''
