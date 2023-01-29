@@ -1,4 +1,4 @@
-My goal is to complete 2-3 LeetCode challenges a day 
+My goal is to complete 1-2 LeetCode challenges a day 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Day 1: running sums, pivot index, is_ismorphic 
@@ -54,15 +54,17 @@ Problem 2: Given the root of a binary tree, return the level order traversal of 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Day 6: Binary Search, First Bad Version 
+Day 6: First Bad Version, Validate Binary Search Tree
 
-Problem 1: Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums.
-           If target exists, then return its index. Otherwise, return -1.
-           You must write an algorithm with O(log n) runtime complexity.
-
-Problem 2: You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product
+Problem 1: You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product
            fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.
            Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.
            You are given an API bool isBadVersion(version) which returns whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.
+
+Problem 2: Given the root of a binary tree, determine if it is a valid binary search tree (BST).
+           A valid BST is defined as follows:
+           The left subtree of a node contains only nodes with keys less than the node's key.
+           The right subtree of a node contains only nodes with keys greater than the node's key.
+           Both the left and right subtrees must also be binary search trees.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
